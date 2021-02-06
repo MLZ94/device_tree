@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_X00QD.mk
+    $(LOCAL_DIR)/legion_X00QD.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_X00QD-userdebug \
-    evolution_X00QD-eng
+    legion_X00QD-userdebug \
+    legion_X00QD-eng
