@@ -251,7 +251,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false \
     ro.config.vc_call_vol_steps=11 \
     ro.ril.ecclist=112,911 \
-    ro.telephony.default_network=20,20 \
     telephony.lteOnCdmaDevice=1
 
 # Radio - IMS
