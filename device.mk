@@ -576,7 +576,11 @@ PRODUCT_COPY_FILES += \
 # Prebuilts
 PRODUCT_PACKAGES += \
     GCamGo
-    
+
+# Prebuimt modulemetadata
+PRODUCT_PACKAGES += \
+    com.google.android.modulemetadata
+
 # ZenParts
 PRODUCT_PACKAGES += \
     ZenParts
