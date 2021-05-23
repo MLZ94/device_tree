@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libssrec \
     libvolumelistener \
+    libldacBT_bco \
     libtinycompress \
     libtinycompress.vendor
 
