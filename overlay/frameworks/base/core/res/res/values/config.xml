@@ -310,7 +310,7 @@
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
-    <bool name="config_setColorTransformAccelerated">true</bool>
+    <bool name="config_setColorTransformAccelerated">false</bool>
    
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
