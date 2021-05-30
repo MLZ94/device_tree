@@ -192,12 +192,15 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    vendor.display.config@1.9 \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor \
     copybit.sdm660 \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
     libdisplayconfig \
-    libqdMetaData.system \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
+    libqdMetaData \
     libvulkan \
     libtinyxml \
     memtrack.sdm660 \
@@ -367,6 +370,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libaacwrapper \
     libc2dcolorconvert \
+    libnl \
+    libshim_wfdmmsink \
+    libstagefright_enc_common \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
