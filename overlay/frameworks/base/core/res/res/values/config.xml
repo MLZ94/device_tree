@@ -74,6 +74,9 @@
         <item>"p2p-p2p\\d-.*"</item>
     </string-array>
 
+    <!-- Indicates that connected MAC randomization is supported on this device -->
+    <bool translatable="false" name="config_wifi_connected_mac_randomization_supported">true</bool>
+
     <!-- When true, the tethering upstream network follows the current default
          Internet network (except when the current default network is mobile,
          in which case a DUN network will be used if required). -->
