@@ -187,8 +187,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.dec.enable.downscalar=1 \
     vendor.vidc.enc.disable.pq=false \
     vidc.enc.dcvs.extra-buff-count=2 \
-    vidc.enc.target_support_bframe=1
-
+    vidc.enc.target_support_bframe=1 \
+    media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_enable=true
