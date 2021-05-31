@@ -49,6 +49,80 @@
          As of Honeycomb, blurring is not supported anymore. -->
     <bool name="config_sf_slowBlur">false</bool>
 
+    <!-- Array of desired screen brightness in nits corresponding to the lux values
+         in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
+         config_screenBrightnessMaximumNits, the display brightness is defined as the measured
+         brightness of an all-white image.
+         If this is defined then:
+            - config_autoBrightnessLcdBacklightValues should not be defined
+            - config_screenBrightnessNits must be defined
+            - config_screenBrightnessBacklight must be defined
+         This array should have size one greater than the size of the config_autoBrightnessLevels
+         array. The brightness values must be non-negative and non-decreasing. This must be
+         overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessDisplayValuesNits">
+        <item>9</item>
+        <item>14</item>
+        <item>44</item>
+        <item>67</item>
+        <item>86</item>
+        <item>104</item>
+        <item>132</item>
+        <item>148</item>
+        <item>162</item>
+        <item>174</item>
+        <item>190</item>
+        <item>206</item>
+        <item>222</item>
+        <item>287</item>
+        <item>331</item>
+        <item>366</item>
+        <item>382</item>
+        <item>389</item>
+        <item>393</item>
+        <item>400</item>
+        <item>500</item>
+        <item>599</item>
+        <item>701</item>
+        <item>801</item>
+        <item>1999</item>
+    </integer-array>
+
+    <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
+         The N entries of this array define N  1 zones as follows:
+         Zone 0:        0 <= LUX < array[0]
+         Zone 1:        array[0] <= LUX < array[1]
+         ...
+         Zone N:        array[N - 1] <= LUX < array[N]
+         Zone N + 1     array[N] <= LUX < infinity
+         Must be overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessLevels">
+        <item>1</item>
+        <item>15</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>650</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>7000</item>
+        <item>10000</item>
+        <item>12500</item>
+        <item>15000</item>
+        <item>17500</item>
+        <item>20000</item>
+        <item>50000</item>
+    </integer-array>
+
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
 
