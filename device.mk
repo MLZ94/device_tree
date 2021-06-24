@@ -380,6 +380,7 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc \
     libOmxSwVencHevc \
+    libOmxVdec \
     libOmxVenc \
     libstagefright_softomx \
     libstagefrighthw
